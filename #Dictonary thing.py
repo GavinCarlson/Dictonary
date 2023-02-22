@@ -7,11 +7,16 @@ Names['Marrie'] = 92
 Names['Ria'] = 88
 print(len(Names))
 
-for x in Names.values():
-    print(x)
+num_students = len(Names)
 
-import statistics 
-def Mean(Names):
-    list_avg = statistics.mean(Names)
-    return(list_avg)
+
+total_score = sum(Names.values())
+mean = total_score / num_students
+print(mean)
+
+num_avg_student = 0
+for score in Names.values():
+    if score > mean:
+        num_avg_student += 1
+print(num_avg_student)
 
