@@ -20,3 +20,6 @@ for score in Names.values():
         num_avg_student += 1
 print(num_avg_student)
 
+Names['Sam'] = 95
+
+print(Names['Sam'])
